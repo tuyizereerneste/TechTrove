@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from'mongoose';
 const Schema = mongoose.Schema;
 
 const ApplicationSchema = new Schema({
@@ -7,4 +7,4 @@ const ApplicationSchema = new Schema({
   dateApplied: { type: Date, default: Date.now }
 });
 
-module.exports = mongoose.model('Application', ApplicationSchema);
+export default mongoose.model('Application', ApplicationSchema);
